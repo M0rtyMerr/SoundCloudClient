@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78022BEF222A007E00FB4390 /* JSONDecoder+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78022BEE222A007E00FB4390 /* JSONDecoder+Then.swift */; };
+		78191B092229D59E0047DFB3 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B082229D59E0047DFB3 /* Util.swift */; };
+		78191B0B2229D5D50047DFB3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B0A2229D5D50047DFB3 /* User.swift */; };
+		78191B0F2229D88C0047DFB3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B0E2229D88C0047DFB3 /* UserService.swift */; };
+		78191B112229D8C40047DFB3 /* TrackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B102229D8C40047DFB3 /* TrackService.swift */; };
+		78191B132229D8FC0047DFB3 /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B122229D8FC0047DFB3 /* PaginatedResponse.swift */; };
+		78191B162229D9430047DFB3 /* UserServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B152229D9430047DFB3 /* UserServiceImpl.swift */; };
+		78191B182229D94C0047DFB3 /* TrackServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B172229D94C0047DFB3 /* TrackServiceImpl.swift */; };
+		78191B1D2229E1270047DFB3 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B1C2229E1270047DFB3 /* UserView.swift */; };
+		78191B1F2229E1320047DFB3 /* UserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78191B1E2229E1320047DFB3 /* UserView.xib */; };
+		78191B232229E38A0047DFB3 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B222229E38A0047DFB3 /* ViewReactor.swift */; };
+		78191B2A2229F7020047DFB3 /* UIScrollView+reachedBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B292229F7020047DFB3 /* UIScrollView+reachedBottom.swift */; };
+		78191B2C2229F90C0047DFB3 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B2B2229F90C0047DFB3 /* TrackTableViewCell.swift */; };
+		78191B2F2229F9210047DFB3 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78191B2E2229F9210047DFB3 /* TrackTableViewCell.xib */; };
+		78191B312229FBA40047DFB3 /* UITableView+items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78191B302229FBA40047DFB3 /* UITableView+items.swift */; };
 		7840BF982229C85B002BEAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BF972229C85B002BEAF3 /* AppDelegate.swift */; };
 		7840BF9A2229C85B002BEAF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BF992229C85B002BEAF3 /* ViewController.swift */; };
-		7840BF9D2229C85B002BEAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840BF9B2229C85B002BEAF3 /* Main.storyboard */; };
+		7840BF9D2229C85B002BEAF3 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840BF9B2229C85B002BEAF3 /* ViewController.storyboard */; };
 		7840BF9F2229C85C002BEAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7840BF9E2229C85C002BEAF3 /* Assets.xcassets */; };
 		7840BFA22229C85C002BEAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840BFA02229C85C002BEAF3 /* LaunchScreen.storyboard */; };
 		7840BFAD2229C85C002BEAF3 /* SoundCloutClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFAC2229C85C002BEAF3 /* SoundCloutClientTests.swift */; };
 		7840BFB82229C85C002BEAF3 /* SoundCloutClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFB72229C85C002BEAF3 /* SoundCloutClientUITests.swift */; };
+		7840BFC62229CC19002BEAF3 /* SoundCloudApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFC52229CC19002BEAF3 /* SoundCloudApi.swift */; };
+		7840BFC82229CC8A002BEAF3 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFC72229CC8A002BEAF3 /* Pagination.swift */; };
+		7840BFCB2229D020002BEAF3 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFCA2229D020002BEAF3 /* Track.swift */; };
+		BF03A7DDE717DC6AEF0CBFFA /* Pods_SoundCloutClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F469CF650EF5C209E7EEBB47 /* Pods_SoundCloutClientTests.framework */; };
+		F5683B31D283A841097E451E /* Pods_SoundCloutClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC994FE11DA9A3CE55EEA3E /* Pods_SoundCloutClient.framework */; };
+		FDEF1D2BF2A68730DE7DC695 /* Pods_SoundCloutClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9FE6CF2240FF65045FBE3 /* Pods_SoundCloutClientUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +55,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055C04FB56BF7EA818DA82F7 /* Pods-SoundCloutClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClient/Pods-SoundCloutClient.debug.xcconfig"; sourceTree = "<group>"; };
+		0BC994FE11DA9A3CE55EEA3E /* Pods_SoundCloutClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloutClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB9FE6CF2240FF65045FBE3 /* Pods_SoundCloutClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloutClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B22DB16CA148D6129D29E02 /* Pods-SoundCloutClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		78022BEE222A007E00FB4390 /* JSONDecoder+Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Then.swift"; sourceTree = "<group>"; };
+		78191B082229D59E0047DFB3 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		78191B0A2229D5D50047DFB3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		78191B0E2229D88C0047DFB3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		78191B102229D8C40047DFB3 /* TrackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackService.swift; sourceTree = "<group>"; };
+		78191B122229D8FC0047DFB3 /* PaginatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
+		78191B152229D9430047DFB3 /* UserServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceImpl.swift; sourceTree = "<group>"; };
+		78191B172229D94C0047DFB3 /* TrackServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceImpl.swift; sourceTree = "<group>"; };
+		78191B1C2229E1270047DFB3 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		78191B1E2229E1320047DFB3 /* UserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserView.xib; sourceTree = "<group>"; };
+		78191B222229E38A0047DFB3 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
+		78191B292229F7020047DFB3 /* UIScrollView+reachedBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+reachedBottom.swift"; sourceTree = "<group>"; };
+		78191B2B2229F90C0047DFB3 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		78191B2E2229F9210047DFB3 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		78191B302229FBA40047DFB3 /* UITableView+items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+items.swift"; sourceTree = "<group>"; };
 		7840BF942229C85B002BEAF3 /* SoundCloutClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloutClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7840BF972229C85B002BEAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7840BF992229C85B002BEAF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7840BF9C2229C85B002BEAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7840BF9C2229C85B002BEAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
 		7840BF9E2229C85C002BEAF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7840BFA12229C85C002BEAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7840BFA32229C85C002BEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +87,14 @@
 		7840BFB32229C85C002BEAF3 /* SoundCloutClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloutClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7840BFB72229C85C002BEAF3 /* SoundCloutClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloutClientUITests.swift; sourceTree = "<group>"; };
 		7840BFB92229C85C002BEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7840BFC52229CC19002BEAF3 /* SoundCloudApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloudApi.swift; sourceTree = "<group>"; };
+		7840BFC72229CC8A002BEAF3 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		7840BFCA2229D020002BEAF3 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		8A47E329AE0094A4D160CD40 /* Pods-SoundCloutClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3C6CB19B0135F45EE301F4D /* Pods-SoundCloutClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientUITests/Pods-SoundCloutClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7F744A9580C0118EE3A1A1E /* Pods-SoundCloutClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientUITests/Pods-SoundCloutClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F469CF650EF5C209E7EEBB47 /* Pods_SoundCloutClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloutClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CDC52B3088771E19BA01B5 /* Pods-SoundCloutClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClient/Pods-SoundCloutClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5683B31D283A841097E451E /* Pods_SoundCloutClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF03A7DDE717DC6AEF0CBFFA /* Pods_SoundCloutClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +118,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEF1D2BF2A68730DE7DC695 /* Pods_SoundCloutClientUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78191B142229D9370047DFB3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				78191B0E2229D88C0047DFB3 /* UserService.swift */,
+				78191B102229D8C40047DFB3 /* TrackService.swift */,
+				78191B192229D9510047DFB3 /* Implementation */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		78191B192229D9510047DFB3 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				78191B152229D9430047DFB3 /* UserServiceImpl.swift */,
+				78191B172229D94C0047DFB3 /* TrackServiceImpl.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		78191B1A2229DE560047DFB3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7840BFC52229CC19002BEAF3 /* SoundCloudApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		78191B1B2229E10D0047DFB3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				78191B082229D59E0047DFB3 /* Util.swift */,
+				78191B292229F7020047DFB3 /* UIScrollView+reachedBottom.swift */,
+				78191B302229FBA40047DFB3 /* UITableView+items.swift */,
+				78022BEE222A007E00FB4390 /* JSONDecoder+Then.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		78191B202229E3530047DFB3 /* UserView */ = {
+			isa = PBXGroup;
+			children = (
+				78191B1C2229E1270047DFB3 /* UserView.swift */,
+				78191B1E2229E1320047DFB3 /* UserView.xib */,
+			);
+			path = UserView;
+			sourceTree = "<group>";
+		};
+		78191B212229E37E0047DFB3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				78191B242229E39B0047DFB3 /* Main */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		78191B242229E39B0047DFB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7840BF9B2229C85B002BEAF3 /* ViewController.storyboard */,
+				78191B202229E3530047DFB3 /* UserView */,
+				7840BF992229C85B002BEAF3 /* ViewController.swift */,
+				78191B222229E38A0047DFB3 /* ViewReactor.swift */,
+				78191B2D2229F90F0047DFB3 /* Cell */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		78191B2D2229F90F0047DFB3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				78191B2B2229F90C0047DFB3 /* TrackTableViewCell.swift */,
+				78191B2E2229F9210047DFB3 /* TrackTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		7840BF8B2229C85B002BEAF3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +208,8 @@
 				7840BFAB2229C85C002BEAF3 /* SoundCloutClientTests */,
 				7840BFB62229C85C002BEAF3 /* SoundCloutClientUITests */,
 				7840BF952229C85B002BEAF3 /* Products */,
+				ED42BC196FF5ED846403434C /* Pods */,
+				EE056B28BD1B056A229D7B3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +227,14 @@
 			isa = PBXGroup;
 			children = (
 				7840BF972229C85B002BEAF3 /* AppDelegate.swift */,
-				7840BF992229C85B002BEAF3 /* ViewController.swift */,
-				7840BF9B2229C85B002BEAF3 /* Main.storyboard */,
+				78191B212229E37E0047DFB3 /* Screen */,
 				7840BF9E2229C85C002BEAF3 /* Assets.xcassets */,
-				7840BFA02229C85C002BEAF3 /* LaunchScreen.storyboard */,
 				7840BFA32229C85C002BEAF3 /* Info.plist */,
+				7840BFA02229C85C002BEAF3 /* LaunchScreen.storyboard */,
+				78191B1A2229DE560047DFB3 /* API */,
+				7840BFC92229CEB0002BEAF3 /* Model */,
+				78191B1B2229E10D0047DFB3 /* Util */,
+				78191B142229D9370047DFB3 /* Service */,
 			);
 			path = SoundCloutClient;
 			sourceTree = "<group>";
@@ -125,6 +257,40 @@
 			path = SoundCloutClientUITests;
 			sourceTree = "<group>";
 		};
+		7840BFC92229CEB0002BEAF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7840BFC72229CC8A002BEAF3 /* Pagination.swift */,
+				7840BFCA2229D020002BEAF3 /* Track.swift */,
+				78191B0A2229D5D50047DFB3 /* User.swift */,
+				78191B122229D8FC0047DFB3 /* PaginatedResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED42BC196FF5ED846403434C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				055C04FB56BF7EA818DA82F7 /* Pods-SoundCloutClient.debug.xcconfig */,
+				F4CDC52B3088771E19BA01B5 /* Pods-SoundCloutClient.release.xcconfig */,
+				8A47E329AE0094A4D160CD40 /* Pods-SoundCloutClientTests.debug.xcconfig */,
+				5B22DB16CA148D6129D29E02 /* Pods-SoundCloutClientTests.release.xcconfig */,
+				D7F744A9580C0118EE3A1A1E /* Pods-SoundCloutClientUITests.debug.xcconfig */,
+				C3C6CB19B0135F45EE301F4D /* Pods-SoundCloutClientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE056B28BD1B056A229D7B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BC994FE11DA9A3CE55EEA3E /* Pods_SoundCloutClient.framework */,
+				F469CF650EF5C209E7EEBB47 /* Pods_SoundCloutClientTests.framework */,
+				2CB9FE6CF2240FF65045FBE3 /* Pods_SoundCloutClientUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +298,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7840BFBC2229C85C002BEAF3 /* Build configuration list for PBXNativeTarget "SoundCloutClient" */;
 			buildPhases = (
+				F46C8524B71F4FA7C6ACB30A /* [CP] Check Pods Manifest.lock */,
+				78022BF1222A06DA00FB4390 /* [Swiftlint] autocorrect */,
+				78022BF0222A06AC00FB4390 /* [Swiftlint] */,
 				7840BF902229C85B002BEAF3 /* Sources */,
 				7840BF912229C85B002BEAF3 /* Frameworks */,
 				7840BF922229C85B002BEAF3 /* Resources */,
+				F00F677842996E0F0D1E877D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7840BFBF2229C85C002BEAF3 /* Build configuration list for PBXNativeTarget "SoundCloutClientTests" */;
 			buildPhases = (
+				495E12545F27FC9249E4B7E8 /* [CP] Check Pods Manifest.lock */,
 				7840BFA42229C85C002BEAF3 /* Sources */,
 				7840BFA52229C85C002BEAF3 /* Frameworks */,
 				7840BFA62229C85C002BEAF3 /* Resources */,
+				E22E2197FC4DFF46BD4A9AE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7840BFC22229C85C002BEAF3 /* Build configuration list for PBXNativeTarget "SoundCloutClientUITests" */;
 			buildPhases = (
+				51B0D8BE7D9643EC62ADA641 /* [CP] Check Pods Manifest.lock */,
 				7840BFAF2229C85C002BEAF3 /* Sources */,
 				7840BFB02229C85C002BEAF3 /* Frameworks */,
 				7840BFB12229C85C002BEAF3 /* Resources */,
@@ -231,7 +404,9 @@
 			files = (
 				7840BFA22229C85C002BEAF3 /* LaunchScreen.storyboard in Resources */,
 				7840BF9F2229C85C002BEAF3 /* Assets.xcassets in Resources */,
-				7840BF9D2229C85B002BEAF3 /* Main.storyboard in Resources */,
+				7840BF9D2229C85B002BEAF3 /* ViewController.storyboard in Resources */,
+				78191B2F2229F9210047DFB3 /* TrackTableViewCell.xib in Resources */,
+				78191B1F2229E1320047DFB3 /* UserView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +426,222 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		495E12545F27FC9249E4B7E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundCloutClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B0D8BE7D9643EC62ADA641 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundCloutClientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78022BF0222A06AC00FB4390 /* [Swiftlint] */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Swiftlint]";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		78022BF1222A06DA00FB4390 /* [Swiftlint] autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Swiftlint] autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n";
+		};
+		E22E2197FC4DFF46BD4A9AE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxNimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F00F677842996E0F0D1E877D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoundCloutClient/Pods-SoundCloutClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoundCloutClient/Pods-SoundCloutClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46C8524B71F4FA7C6ACB30A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundCloutClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7840BF902229C85B002BEAF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78191B132229D8FC0047DFB3 /* PaginatedResponse.swift in Sources */,
+				78191B0F2229D88C0047DFB3 /* UserService.swift in Sources */,
+				78191B162229D9430047DFB3 /* UserServiceImpl.swift in Sources */,
+				7840BFC62229CC19002BEAF3 /* SoundCloudApi.swift in Sources */,
+				78191B312229FBA40047DFB3 /* UITableView+items.swift in Sources */,
+				78191B092229D59E0047DFB3 /* Util.swift in Sources */,
+				7840BFCB2229D020002BEAF3 /* Track.swift in Sources */,
 				7840BF9A2229C85B002BEAF3 /* ViewController.swift in Sources */,
 				7840BF982229C85B002BEAF3 /* AppDelegate.swift in Sources */,
+				7840BFC82229CC8A002BEAF3 /* Pagination.swift in Sources */,
+				78022BEF222A007E00FB4390 /* JSONDecoder+Then.swift in Sources */,
+				78191B232229E38A0047DFB3 /* ViewReactor.swift in Sources */,
+				78191B182229D94C0047DFB3 /* TrackServiceImpl.swift in Sources */,
+				78191B0B2229D5D50047DFB3 /* User.swift in Sources */,
+				78191B112229D8C40047DFB3 /* TrackService.swift in Sources */,
+				78191B2C2229F90C0047DFB3 /* TrackTableViewCell.swift in Sources */,
+				78191B2A2229F7020047DFB3 /* UIScrollView+reachedBottom.swift in Sources */,
+				78191B1D2229E1270047DFB3 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +677,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7840BF9B2229C85B002BEAF3 /* Main.storyboard */ = {
+		7840BF9B2229C85B002BEAF3 /* ViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7840BF9C2229C85B002BEAF3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		7840BFA02229C85C002BEAF3 /* LaunchScreen.storyboard */ = {
@@ -430,6 +814,7 @@
 		};
 		7840BFBD2229C85C002BEAF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 055C04FB56BF7EA818DA82F7 /* Pods-SoundCloutClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +833,7 @@
 		};
 		7840BFBE2229C85C002BEAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4CDC52B3088771E19BA01B5 /* Pods-SoundCloutClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,8 +852,8 @@
 		};
 		7840BFC02229C85C002BEAF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A47E329AE0094A4D160CD40 /* Pods-SoundCloutClientTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6T8BHG2NB;
@@ -487,8 +873,8 @@
 		};
 		7840BFC12229C85C002BEAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B22DB16CA148D6129D29E02 /* Pods-SoundCloutClientTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6T8BHG2NB;
@@ -508,8 +894,8 @@
 		};
 		7840BFC32229C85C002BEAF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F744A9580C0118EE3A1A1E /* Pods-SoundCloutClientUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6T8BHG2NB;
 				INFOPLIST_FILE = SoundCloutClientUITests/Info.plist;
@@ -528,8 +914,8 @@
 		};
 		7840BFC42229C85C002BEAF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C6CB19B0135F45EE301F4D /* Pods-SoundCloutClientUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6T8BHG2NB;
 				INFOPLIST_FILE = SoundCloutClientUITests/Info.plist;
