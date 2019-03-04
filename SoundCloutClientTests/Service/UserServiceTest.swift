@@ -17,7 +17,6 @@ final class UserServiceTest: QuickSpec {
         super.spec()
 
         describe("UserService test") {
-            // swiftlint:disable:next implicitly_unwrapped_optional
             var userService: UserService!
 
             context("stubbed provider") {

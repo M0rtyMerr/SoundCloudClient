@@ -15,13 +15,10 @@ import RxTest
 @testable import SoundCloutClient
 
 final class ViewReactorTest: QuickSpec {
-    // swiftlint:disable:next function_body_length
     override func spec() {
         super.spec()
 
-        // swiftlint:disable all
         describe("ViewReactor test") {
-            // swiftlint:disable implicitly_unwrapped_optional
             var viewReactor: ViewReactor!
             var stubUserService: StubUserService!
             var stubTrackService: StubTrackService!

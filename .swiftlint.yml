@@ -86,6 +86,7 @@ opt_in_rules:
 excluded:
   - Pods
   - R.generated.swift
+  - SoundCloutClientTests
 
 attributes:
   always_on_same_line: ["@discardableResult", "@objc", "@IBAction", "@IBDesignable"]

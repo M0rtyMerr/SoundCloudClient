@@ -16,9 +16,7 @@ final class TrackServiceTest: QuickSpec {
     override func spec() {
         super.spec()
 
-        // swiftlint:disable:next closure_body_length
         describe("TrackService test") {
-            // swiftlint:disable:next implicitly_unwrapped_optional
             var trackService: TrackService!
 
             context("stubbed provider") {
