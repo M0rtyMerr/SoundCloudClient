@@ -1,0 +1,31 @@
+{
+    "id": 3207,
+    "kind": "user",
+    "permalink": "jwagener",
+    "username": "Johannes Wagener",
+    "last_modified": "2016/05/20 13:43:12 +0000",
+    "uri": "https://api.soundcloud.com/users/3207",
+    "permalink_url": "http://soundcloud.com/jwagener",
+    "avatar_url": "https://i1.sndcdn.com/avatars-000214493195-8h8dpe-large.jpg",
+    "country": "Germany",
+    "first_name": "Johannes",
+    "last_name": "Wagener",
+    "full_name": "Johannes Wagener",
+    "description": "",
+    "city": "Berlin",
+    "discogs_name": null,
+    "myspace_name": null,
+    "website": "http://johannes.wagener.cc",
+    "website_title": "johannes.wagener.cc",
+    "track_count": 55,
+    "playlist_count": 3,
+    "online": false,
+    "plan": "Free",
+    "public_favorites_count": 277,
+    "followers_count": 2095,
+    "followings_count": 371,
+    "subscriptions": [
+        
+    ],
+    "reposts_count": 15
+}

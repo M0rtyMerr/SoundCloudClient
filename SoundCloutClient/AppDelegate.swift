@@ -39,7 +39,7 @@ private extension AppDelegate {
         }
         let userService = UserServiceImpl(soundCloudApi: soundCloudApi, decoder: decoder)
         let trackService = TrackServiceImpl(soundCloudApi: soundCloudApi, decoder: decoder)
-        let viewReactor = ViewReactor(userId: Const.userId, userService: userService, trackService: trackService)
+        let viewReactor = ViewReactor(userId: Const.userId, userService: userService, trackService: trackService, refreshPeriod: 2 * 60)
         return ViewController.instantiate().then {
             $0.reactor = viewReactor
         }

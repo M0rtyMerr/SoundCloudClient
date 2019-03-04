@@ -9,7 +9,7 @@
 import Moya
 
 enum SoundCloudApi {
-    case profile(id: Int)
+    case user(id: Int)
     case favorites(userId: Int, pagination: Pagination)
     case favoritesNext(href: URL)
 }
@@ -17,13 +17,13 @@ enum SoundCloudApi {
 // MARK: - TargetType
 extension SoundCloudApi: TargetType {
     private enum Const {
-        // keychain?
+        // в кейчейн после загрузки с бекенда в проде, но в тестовом норм
         static let userToken = "c23089b7e88643b5b839c4b8609fce3b"
     }
 
     var baseURL: URL {
         switch self {
-        case .profile, .favorites:
+        case .user, .favorites:
             guard let baseUrl = URL(string: "http://api.soundcloud.com") else {
                 fatalError("Base URL is not correct")
             }
@@ -35,7 +35,7 @@ extension SoundCloudApi: TargetType {
 
     var path: String {
         switch self {
-        case  let .profile(id):
+        case  let .user(id):
             return "/users/\(id)"
         case let .favorites(userId, _):
             return "/users/\(userId)/favorites"
@@ -49,13 +49,18 @@ extension SoundCloudApi: TargetType {
     }
 
     var sampleData: Data {
-        return Util.json(named: "fix")
+        switch self {
+        case .favorites, .favoritesNext:
+            return Util.json(named: "favoritesStub")
+        case .user:
+            return Util.json(named: "userStub")
+        }
     }
 
     var task: Task {
         let token: [String: Any] = ["client_id": Const.userToken]
         switch self {
-        case .profile:
+        case .user:
             return .requestParameters(parameters: token, encoding: URLEncoding.queryString)
         case let .favorites(_, pagination):
             let paginationMergedWithToken = token.merging(pagination.dictionary) { lhs, _ in lhs }

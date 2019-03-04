@@ -19,8 +19,22 @@ struct User {
 extension User: Decodable {
 }
 
+// MARK: - Equatable
+extension User: Equatable {
+}
+
 extension User {
     var avatar: URL? {
         return URL(string: avatarUrl ?? "")
+    }
+
+    var publicFavoritesCountText: String? {
+        guard let publicFavoritesCount = publicFavoritesCount else { return nil }
+        return String(publicFavoritesCount)
+    }
+
+    var followersCountText: String? {
+        guard let followersCount = followersCount else { return nil }
+        return String(followersCount)
     }
 }

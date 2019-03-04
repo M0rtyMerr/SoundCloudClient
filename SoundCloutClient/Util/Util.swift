@@ -11,8 +11,7 @@ import Foundation
 enum Util {
     static func json(named name: String) -> Data {
         guard let filePath = Bundle.main.path(forResource: name, ofType: "json") else {
-            // swiftlint:disable:next force_unwrapping
-            return "".data(using: String.Encoding.utf8)!
+            fatalError("Stub json not found")
         }
         // swiftlint:disable:next force_try
         return try! Data(contentsOf: URL(fileURLWithPath: filePath))

@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (4.8.1)
-  - Cuckoo (0.12.0)
   - Differentiator (3.1.0)
   - Kingfisher (5.1.1)
   - Moya/Core (12.0.1):
@@ -29,15 +28,6 @@ PODS:
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxFlow (2.0.0):
-    - RxCocoa (>= 4.4.0)
-    - RxSwift (>= 4.4.0)
-  - RxGesture (2.1.0):
-    - RxCocoa (~> 4.4.0)
-    - RxSwift (~> 4.4.0)
-  - RxKeyboard (0.9.0):
-    - RxCocoa (>= 4.3.1)
-    - RxSwift (>= 4.3.1)
   - RxNimble (4.4.0):
     - RxNimble/RxBlocking (= 4.4.0)
   - RxNimble/Core (4.4.0):
@@ -63,19 +53,14 @@ PODS:
   - Then (2.4.0)
 
 DEPENDENCIES:
-  - Cuckoo
   - Kingfisher
   - Moya/RxSwift
   - Nimble
   - Quick
   - ReactorKit
   - Reusable
-  - RxBlocking
   - RxCocoa
   - RxDataSources
-  - RxFlow
-  - RxGesture
-  - RxKeyboard
   - RxNimble
   - RxSwift
   - RxSwiftExt
@@ -86,7 +71,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - Cuckoo
     - Differentiator
     - Kingfisher
     - Moya
@@ -99,9 +83,6 @@ SPEC REPOS:
     - RxBlocking
     - RxCocoa
     - RxDataSources
-    - RxFlow
-    - RxGesture
-    - RxKeyboard
     - RxNimble
     - RxSwift
     - RxSwiftExt
@@ -111,7 +92,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
-  Cuckoo: d30b6c149e52ffbcfe6b4a9543e4627d08947274
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Kingfisher: 2558186963e5be42d98c5b110ccb3130148b77e4
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
@@ -124,9 +104,6 @@ SPEC CHECKSUMS:
   RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
   RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxFlow: f0212025e3747431b3be09c6be04bfde0a3bf5a4
-  RxGesture: 7f6dfb45dbde06e618c24442d38493e3144f2c95
-  RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
   RxNimble: ba6caf0195c37fd50dd4b967624b66ff580d781a
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
@@ -134,6 +111,6 @@ SPEC CHECKSUMS:
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: e416f4bf6e0bd41ab901d58ac05dce08c27dad1e
+PODFILE CHECKSUM: dd9d50b2d6f1e18900c63cd41858c832201fe2be
 
 COCOAPODS: 1.6.1

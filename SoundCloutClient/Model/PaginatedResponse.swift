@@ -10,7 +10,7 @@ import Foundation
 
 struct PaginatedResponse<T: Decodable> {
     let collection: [T]
-    private let nextHref: String?
+    let nextHref: String?
 }
 
 // MARK: - Decodable

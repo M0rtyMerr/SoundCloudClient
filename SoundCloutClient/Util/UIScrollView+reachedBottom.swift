@@ -16,7 +16,7 @@ extension Reactive where Base: UIScrollView {
             .flatMap { [weak base] contentOffset -> Observable<Void> in
                 guard let scrollView = base else { return .empty() }
                 let visibleHeight = scrollView.frame.height - scrollView.contentInset.top - scrollView.contentInset.bottom
-                let y = contentOffset.y + scrollView.contentInset.top
+                let y = contentOffset.y + scrollView.contentInset.top + 600.0
                 let threshold = max(0.0, scrollView.contentSize.height - visibleHeight)
                 return y > threshold ? .just(()) : .empty()
             }

@@ -2,13 +2,11 @@ platform :ios, '12.1'
 
 target 'SoundCloutClient' do
   use_frameworks!
+  inhibit_all_warnings!
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'RxFlow'
   pod 'RxDataSources'
-  pod 'RxGesture'
   pod 'RxSwiftExt'
-  pod 'RxKeyboard'
   pod 'Moya/RxSwift'
   pod 'Reusable'
   pod 'Then'
@@ -18,11 +16,9 @@ target 'SoundCloutClient' do
   
   target 'SoundCloutClientTests' do
     inherit! :search_paths
-    pod 'RxBlocking'
     pod 'RxTest'
     pod 'Quick'
     pod 'Nimble'
-    pod 'Cuckoo'
     pod 'RxNimble'
   end
 

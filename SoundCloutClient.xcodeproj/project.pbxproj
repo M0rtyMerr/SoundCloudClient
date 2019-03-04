@@ -27,11 +27,18 @@
 		7840BF9D2229C85B002BEAF3 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840BF9B2229C85B002BEAF3 /* ViewController.storyboard */; };
 		7840BF9F2229C85C002BEAF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7840BF9E2229C85C002BEAF3 /* Assets.xcassets */; };
 		7840BFA22229C85C002BEAF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7840BFA02229C85C002BEAF3 /* LaunchScreen.storyboard */; };
-		7840BFAD2229C85C002BEAF3 /* SoundCloutClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFAC2229C85C002BEAF3 /* SoundCloutClientTests.swift */; };
 		7840BFB82229C85C002BEAF3 /* SoundCloutClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFB72229C85C002BEAF3 /* SoundCloutClientUITests.swift */; };
 		7840BFC62229CC19002BEAF3 /* SoundCloudApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFC52229CC19002BEAF3 /* SoundCloudApi.swift */; };
 		7840BFC82229CC8A002BEAF3 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFC72229CC8A002BEAF3 /* Pagination.swift */; };
 		7840BFCB2229D020002BEAF3 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7840BFCA2229D020002BEAF3 /* Track.swift */; };
+		786A4FB8222C72260022FDC6 /* userStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 786A4FB7222C72260022FDC6 /* userStub.json */; };
+		786A4FBA222C723D0022FDC6 /* favoritesStub.json in Resources */ = {isa = PBXBuildFile; fileRef = 786A4FB9222C723D0022FDC6 /* favoritesStub.json */; };
+		786A4FBD222C78990022FDC6 /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FBC222C78990022FDC6 /* UserServiceTest.swift */; };
+		786A4FC1222C7AE70022FDC6 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FC0222C7AE70022FDC6 /* Random.swift */; };
+		786A4FC5222C7E000022FDC6 /* TrackServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FC4222C7E000022FDC6 /* TrackServiceTest.swift */; };
+		786A4FC7222C7F850022FDC6 /* ViewReactorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FC6222C7F850022FDC6 /* ViewReactorTest.swift */; };
+		786A4FCB222C8AD90022FDC6 /* TestableObserver+elements().swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FCA222C8AD90022FDC6 /* TestableObserver+elements().swift */; };
+		786A4FCF222CBB440022FDC6 /* Array+distinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FCE222CBB440022FDC6 /* Array+distinctUntilChanged.swift */; };
 		BF03A7DDE717DC6AEF0CBFFA /* Pods_SoundCloutClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F469CF650EF5C209E7EEBB47 /* Pods_SoundCloutClientTests.framework */; };
 		F5683B31D283A841097E451E /* Pods_SoundCloutClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC994FE11DA9A3CE55EEA3E /* Pods_SoundCloutClient.framework */; };
 		FDEF1D2BF2A68730DE7DC695 /* Pods_SoundCloutClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9FE6CF2240FF65045FBE3 /* Pods_SoundCloutClientUITests.framework */; };
@@ -82,7 +89,6 @@
 		7840BFA12229C85C002BEAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7840BFA32229C85C002BEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7840BFA82229C85C002BEAF3 /* SoundCloutClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloutClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7840BFAC2229C85C002BEAF3 /* SoundCloutClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloutClientTests.swift; sourceTree = "<group>"; };
 		7840BFAE2229C85C002BEAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7840BFB32229C85C002BEAF3 /* SoundCloutClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundCloutClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7840BFB72229C85C002BEAF3 /* SoundCloutClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloutClientUITests.swift; sourceTree = "<group>"; };
@@ -90,6 +96,14 @@
 		7840BFC52229CC19002BEAF3 /* SoundCloudApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCloudApi.swift; sourceTree = "<group>"; };
 		7840BFC72229CC8A002BEAF3 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		7840BFCA2229D020002BEAF3 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		786A4FB7222C72260022FDC6 /* userStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userStub.json; sourceTree = "<group>"; };
+		786A4FB9222C723D0022FDC6 /* favoritesStub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = favoritesStub.json; sourceTree = "<group>"; };
+		786A4FBC222C78990022FDC6 /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
+		786A4FC0222C7AE70022FDC6 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		786A4FC4222C7E000022FDC6 /* TrackServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackServiceTest.swift; sourceTree = "<group>"; };
+		786A4FC6222C7F850022FDC6 /* ViewReactorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactorTest.swift; sourceTree = "<group>"; };
+		786A4FCA222C8AD90022FDC6 /* TestableObserver+elements().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestableObserver+elements().swift"; sourceTree = "<group>"; };
+		786A4FCE222CBB440022FDC6 /* Array+distinctUntilChanged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+distinctUntilChanged.swift"; sourceTree = "<group>"; };
 		8A47E329AE0094A4D160CD40 /* Pods-SoundCloutClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3C6CB19B0135F45EE301F4D /* Pods-SoundCloutClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientUITests/Pods-SoundCloutClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7F744A9580C0118EE3A1A1E /* Pods-SoundCloutClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientUITests/Pods-SoundCloutClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				7840BFC52229CC19002BEAF3 /* SoundCloudApi.swift */,
+				786A4FBB222C72410022FDC6 /* Stubs */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -242,8 +257,10 @@
 		7840BFAB2229C85C002BEAF3 /* SoundCloutClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				7840BFAC2229C85C002BEAF3 /* SoundCloutClientTests.swift */,
+				786A4FC2222C7DDF0022FDC6 /* Service */,
 				7840BFAE2229C85C002BEAF3 /* Info.plist */,
+				786A4FC3222C7DF10022FDC6 /* Util */,
+				786A4FC8222C7F890022FDC6 /* Screen */,
 			);
 			path = SoundCloutClientTests;
 			sourceTree = "<group>";
@@ -266,6 +283,50 @@
 				78191B122229D8FC0047DFB3 /* PaginatedResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		786A4FBB222C72410022FDC6 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				786A4FB7222C72260022FDC6 /* userStub.json */,
+				786A4FB9222C723D0022FDC6 /* favoritesStub.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		786A4FC2222C7DDF0022FDC6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				786A4FBC222C78990022FDC6 /* UserServiceTest.swift */,
+				786A4FC4222C7E000022FDC6 /* TrackServiceTest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		786A4FC3222C7DF10022FDC6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				786A4FC0222C7AE70022FDC6 /* Random.swift */,
+				786A4FCA222C8AD90022FDC6 /* TestableObserver+elements().swift */,
+				786A4FCE222CBB440022FDC6 /* Array+distinctUntilChanged.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		786A4FC8222C7F890022FDC6 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				786A4FC9222C7F8F0022FDC6 /* Main */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		786A4FC9222C7F8F0022FDC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				786A4FC6222C7F850022FDC6 /* ViewReactorTest.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		ED42BC196FF5ED846403434C /* Pods */ = {
@@ -402,6 +463,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786A4FB8222C72260022FDC6 /* userStub.json in Resources */,
+				786A4FBA222C723D0022FDC6 /* favoritesStub.json in Resources */,
 				7840BFA22229C85C002BEAF3 /* LaunchScreen.storyboard in Resources */,
 				7840BF9F2229C85C002BEAF3 /* Assets.xcassets in Resources */,
 				7840BF9D2229C85B002BEAF3 /* ViewController.storyboard in Resources */,
@@ -518,7 +581,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
@@ -531,7 +593,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
@@ -562,9 +623,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxFlow/RxFlow.framework",
-				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
-				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
@@ -583,9 +641,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxFlow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
@@ -649,7 +704,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7840BFAD2229C85C002BEAF3 /* SoundCloutClientTests.swift in Sources */,
+				786A4FCF222CBB440022FDC6 /* Array+distinctUntilChanged.swift in Sources */,
+				786A4FBD222C78990022FDC6 /* UserServiceTest.swift in Sources */,
+				786A4FCB222C8AD90022FDC6 /* TestableObserver+elements().swift in Sources */,
+				786A4FC5222C7E000022FDC6 /* TrackServiceTest.swift in Sources */,
+				786A4FC1222C7AE70022FDC6 /* Random.swift in Sources */,
+				786A4FC7222C7F850022FDC6 /* ViewReactorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

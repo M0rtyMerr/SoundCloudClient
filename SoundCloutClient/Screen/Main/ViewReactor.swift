@@ -8,6 +8,7 @@
 
 import ReactorKit
 import RxCocoa
+import RxDataSources
 import RxSwift
 import RxSwiftExt
 
@@ -23,7 +24,6 @@ import RxSwiftExt
 final class ViewReactor: Reactor {
     private enum Const {
         static let error = "Sorry, error"
-        static let interval: TimeInterval = 2 * 60
     }
 
     enum Action {
@@ -36,36 +36,63 @@ final class ViewReactor: Reactor {
         case appendTracks([Track], nextPage: URL?)
         case setUser(User)
         case setFooterAnimating(Bool)
+        case setRefresing(Bool)
+        case setError(String?)
     }
 
-    struct State {
+    struct State: Equatable {
+        typealias SectionType = AnimatableSectionModel<String, Track>
+
         var nextPage: URL?
         var tracks: [Track] = []
         var error: String?
+        var isRefreshing: Bool = false
         var isFooterAnimating: Bool = false
         var user: User?
+        var sections: [SectionType] {
+            return [SectionType(model: "", items: tracks)]
+        }
+
+        init(nextPage: URL? = nil, tracks: [Track] = [], error: String? = nil, isFooterAnimating: Bool = false, user: User? = nil, isRefreshing: Bool = false) {
+            self.nextPage = nextPage
+            self.tracks = tracks
+            self.error = error
+            self.isFooterAnimating = isFooterAnimating
+            self.user = user
+            self.isRefreshing = isRefreshing
+        }
     }
 
     let initialState = State()
+    private let refreshPeriod: TimeInterval?
     private let userService: UserService
     private let trackService: TrackService
     private let userId: Int
     private let backgroundScheduler = SerialDispatchQueueScheduler(qos: .background)
 
-    init(userId: Int, userService: UserService, trackService: TrackService) {
+    init(userId: Int, userService: UserService, trackService: TrackService, refreshPeriod: TimeInterval? = nil) {
         self.userService = userService
         self.trackService = trackService
         self.userId = userId
+        self.refreshPeriod = refreshPeriod
     }
 
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .refresh:
-            return Observable.merge(
+            let refreshTracksAndUser = Observable.merge(
                 userService.get(id: userId).map(Mutation.setUser).asObservable(),
                 trackService.get(userId: userId, pagination: Pagination())
                     .map { Mutation.setTracks($0.collection, nextPage: $0.nextPage) }
                     .asObservable()
+            )
+            .catchErrorJustReturn(Mutation.setError(Const.error))
+
+            return Observable.concat(
+                 .just(Mutation.setError(nil)),
+                 .just(Mutation.setRefresing(true)),
+                 refreshTracksAndUser,
+                 .just(Mutation.setRefresing(false))
             )
         case .loadMore:
             guard let nextPage = currentState.nextPage else { return .empty() }
@@ -74,6 +101,7 @@ final class ViewReactor: Reactor {
                 trackService.get(href: nextPage).map { Mutation.appendTracks($0.collection, nextPage: $0.nextPage) }.asObservable(),
                 .just(Mutation.setFooterAnimating(false))
             )
+            .catchErrorJustReturn(Mutation.setError(Const.error))
         }
     }
 
@@ -90,12 +118,20 @@ final class ViewReactor: Reactor {
         case let .appendTracks(tracks, nextPage):
             newState.tracks.append(contentsOf: tracks)
             newState.nextPage = nextPage
+        case let .setError(error):
+            newState.error = error
+        case let .setRefresing(isRefreshing):
+            newState.isRefreshing = isRefreshing
         }
         return newState
     }
 
     func transform(action: Observable<Action>) -> Observable<Action> {
-        let periodicRefresh = Observable<Int>.interval(Const.interval, scheduler: backgroundScheduler).mapTo(Action.refresh)
-        return Observable.merge(action.share().startWith(.refresh), periodicRefresh)
+        let initialAction = action.share().startWith(.refresh)
+        guard let refreshPeriod = refreshPeriod else {
+            return initialAction
+        }
+        let periodicRefresh = Observable<Int>.interval(refreshPeriod, scheduler: backgroundScheduler).mapTo(Action.refresh)
+        return Observable.merge(initialAction, periodicRefresh)
     }
 }

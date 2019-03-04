@@ -9,14 +9,15 @@
 import AVKit
 import ReactorKit
 import Reusable
+import RxDataSources
 import RxSwift
 import Then
 import UIKit
 
-class ViewController: UIViewController, StoryboardBased, StoryboardView {
+final class ViewController: UIViewController, StoryboardBased, StoryboardView {
     @IBOutlet private var tableView: UITableView!
     private lazy var userView = UserView.loadFromNib()
-    private lazy var footerActivityIndicator = UIActivityIndicatorView(style: .gray).then {
+    private let footerActivityIndicator = UIActivityIndicatorView(style: .gray).then {
         $0.frame = CGRect(x: 0, y: 0, width: 0, height: 30)
     }
     private lazy var refreshControl = UIRefreshControl()
@@ -58,64 +59,38 @@ class ViewController: UIViewController, StoryboardBased, StoryboardView {
             .drive(footerActivityIndicator.rx.isAnimating)
             .disposed(by: disposeBag)
 
-        reactor.state.map { $0.tracks }
-            .asDriver(onErrorJustReturn: [])
-            .do(onNext: { [unowned self] _ in
-                self.footerActivityIndicator.stopAnimating()
-                self.tableView.refreshControl?.endRefreshing()
-             })
-            .drive(tableView.rx.items(TrackTableViewCell.self)) { _, track, cell in
-                cell.configure(with: track)
+        let dataSource = RxTableViewSectionedAnimatedDataSource<ViewReactor.State.SectionType>(
+            animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade),
+            configureCell: { _, tableView, index, track in
+                tableView.dequeueReusableCell(for: index, cellType: TrackTableViewCell.self).then {
+                    $0.track = track
+                }
             }
+        )
+
+        reactor.state
+            .map { $0.sections }
+            .asDriver(onErrorJustReturn: [])
+            .drive(tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+
+        reactor.state.map { $0.error }
+            .unwrap()
+            .bind { [unowned self] in self.showError(message: $0) }
+            .disposed(by: disposeBag)
+
+        reactor.state.map { $0.isRefreshing }.bind(to: refreshControl.rx.isRefreshing).disposed(by: disposeBag)
+        tableView.rx.willDisplayCell.bind { ($0.cell as? TrackTableViewCell)?.loadImage() }.disposed(by: disposeBag)
     }
+}
 
-//    var player:AVPlayer?
-//    var playerItem:AVPlayerItem?
-//    var playButton:UIButton?
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
-//
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//
-//        let url = URL(string: "https://api.soundcloud.com/tracks/306367098/stream?allow_redirects=true&client_id=c23089b7e88643b5b839c4b8609fce3b")
-//        let playerItem:AVPlayerItem = AVPlayerItem(url: url!)
-//        player = AVPlayer(playerItem: playerItem)
-//
-//        let playerLayer=AVPlayerLayer(player: player!)
-//        playerLayer.frame=CGRect(x:0, y:0, width:10, height:50)
-//        self.view.layer.addSublayer(playerLayer)
-//
-//        playButton = UIButton(type: UIButton.ButtonType.system) as UIButton
-//        let xPostion:CGFloat = 50
-//        let yPostion:CGFloat = 100
-//        let buttonWidth:CGFloat = 150
-//        let buttonHeight:CGFloat = 45
-//
-//        playButton!.frame = CGRect(x: xPostion, y: yPostion, width: buttonWidth, height: buttonHeight)
-//        playButton!.backgroundColor = UIColor.lightGray
-//        playButton!.setTitle("Play", for: UIControl.State.normal)
-//        playButton!.tintColor = UIColor.black
-//        playButton!.addTarget(self, action: #selector(ViewController.playButtonTapped(_:)), for: .touchUpInside)
-//
-//        self.view.addSubview(playButton!)
-//    }
-//
-//    @objc func playButtonTapped(_ sender:UIButton)
-//    {
-//        if player?.rate == 0
-//        {
-//            player!.play()
-//            //playButton!.setImage(UIImage(named: "player_control_pause_50px.png"), forState: UIControlState.Normal)
-//            playButton!.setTitle("Pause", for: UIControl.State.normal)
-//        } else {
-//            player!.pause()
-//            //playButton!.setImage(UIImage(named: "player_control_play_50px.png"), forState: UIControlState.Normal)
-//            playButton!.setTitle("Play", for: UIControl.State.normal)
-//        }
-//    }
-
+// MARK: - Private
+private extension ViewController {
+    func showError(message: String) {
+        guard presentedViewController == nil else { return }
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert).then {
+            $0.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        }
+        present(alert, animated: true)
+    }
 }

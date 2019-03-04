@@ -28,5 +28,6 @@ struct Pagination {
     }
 }
 
+// MARK: - Encodable
 extension Pagination: Encodable {
 }

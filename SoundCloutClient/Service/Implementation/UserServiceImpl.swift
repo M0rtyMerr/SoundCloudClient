@@ -19,6 +19,6 @@ final class UserServiceImpl: UserService {
     }
 
     func get(id: Int) -> Single<User> {
-        return soundCloudApi.rx.request(.profile(id: id)).map(User.self, using: decoder)
+        return soundCloudApi.rx.request(.user(id: id)).map(User.self, using: decoder)
     }
 }
