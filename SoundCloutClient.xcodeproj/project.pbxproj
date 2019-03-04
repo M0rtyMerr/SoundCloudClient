@@ -39,6 +39,7 @@
 		786A4FC7222C7F850022FDC6 /* ViewReactorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FC6222C7F850022FDC6 /* ViewReactorTest.swift */; };
 		786A4FCB222C8AD90022FDC6 /* TestableObserver+elements().swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FCA222C8AD90022FDC6 /* TestableObserver+elements().swift */; };
 		786A4FCF222CBB440022FDC6 /* Array+distinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FCE222CBB440022FDC6 /* Array+distinctUntilChanged.swift */; };
+		786A4FD1222D27AB0022FDC6 /* ViewModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A4FD0222D27AB0022FDC6 /* ViewModuleBuilder.swift */; };
 		BF03A7DDE717DC6AEF0CBFFA /* Pods_SoundCloutClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F469CF650EF5C209E7EEBB47 /* Pods_SoundCloutClientTests.framework */; };
 		F5683B31D283A841097E451E /* Pods_SoundCloutClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC994FE11DA9A3CE55EEA3E /* Pods_SoundCloutClient.framework */; };
 		FDEF1D2BF2A68730DE7DC695 /* Pods_SoundCloutClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9FE6CF2240FF65045FBE3 /* Pods_SoundCloutClientUITests.framework */; };
@@ -104,6 +105,7 @@
 		786A4FC6222C7F850022FDC6 /* ViewReactorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactorTest.swift; sourceTree = "<group>"; };
 		786A4FCA222C8AD90022FDC6 /* TestableObserver+elements().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestableObserver+elements().swift"; sourceTree = "<group>"; };
 		786A4FCE222CBB440022FDC6 /* Array+distinctUntilChanged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+distinctUntilChanged.swift"; sourceTree = "<group>"; };
+		786A4FD0222D27AB0022FDC6 /* ViewModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModuleBuilder.swift; sourceTree = "<group>"; };
 		8A47E329AE0094A4D160CD40 /* Pods-SoundCloutClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientTests/Pods-SoundCloutClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3C6CB19B0135F45EE301F4D /* Pods-SoundCloutClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientUITests/Pods-SoundCloutClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D7F744A9580C0118EE3A1A1E /* Pods-SoundCloutClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloutClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloutClientUITests/Pods-SoundCloutClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				7840BF992229C85B002BEAF3 /* ViewController.swift */,
 				78191B222229E38A0047DFB3 /* ViewReactor.swift */,
 				78191B2D2229F90F0047DFB3 /* Cell */,
+				786A4FD0222D27AB0022FDC6 /* ViewModuleBuilder.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 				78191B2C2229F90C0047DFB3 /* TrackTableViewCell.swift in Sources */,
 				78191B2A2229F7020047DFB3 /* UIScrollView+reachedBottom.swift in Sources */,
 				78191B1D2229E1270047DFB3 /* UserView.swift in Sources */,
+				786A4FD1222D27AB0022FDC6 /* ViewModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
